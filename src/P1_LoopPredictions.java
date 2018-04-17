@@ -1,26 +1,27 @@
 /*
 	ISYS 320
-	Name(s):
-	Date: 
+
+	Name(s):drew schulte
+	Date: april 16
 */
 
 /*
  How many times do you expect the loop to repeat? Remember that 
- “zero,” “infinity,” and “unknown” are legal answers.
+
  
  What do you expect the loop to output?
  
  (a)
- Repeats:
+ Repeats:10 times
  Expected output:
  (b)
- Repeats:
+ Repeats:counting down 10 times
  Expected output:
  (c)
- Repeats:
+ Repeats:83 times
  Expected output:
  (d)
- Repeats:
+ Repeats:anytime the word is less than 10 letters long 
  Expected output:
    
  */
@@ -28,10 +29,10 @@
 /*
  Was your prediction correct?
  
- (a)
- (b)
- (c)
- (d)
+ (a)yes 
+ (b)wrong , it didnt output anything other than the print line statements 
+ (c)wrong, it seemed to run forever until I stopped it 
+ (d)wrong , it didnt output anything other than the print line statements 
 
 */
 public class P1_LoopPredictions {
@@ -39,9 +40,11 @@ public class P1_LoopPredictions {
 	public static void main(String[] args) {
 		System.out.println("STARTING LOOP TEST");
 		
-		
-		// copy and paste the loop to test between here, between the println statements
-		
+		// d
+		String word = "a";
+		while( word.length() < 10 ) {
+		    word = "b" + word + "b";
+		}
 				
 		System.out.println("ENDING LOOP TEST");
 	}
